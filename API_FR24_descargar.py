@@ -1,0 +1,76 @@
+from API_FR24_utils import descargar_por_num_vuelo
+
+
+lista_vuelos_vit = {
+    ("BCS1GH", True, "VIT"),
+    ("BCS3CA", True, "VIT"),
+    ("BCS213P", True, "VIT"),
+    ("QY192", False, "VIT"),
+    ("3V4472", False, "VIT"),
+    ("WT1810", False, "VIT"),
+    ("WT1811", False, "VIT"),
+    ("QY198", False, "VIT"),
+    ("BCS3UP", True, "VIT"),
+    ("BCS73B", True, "VIT"),
+    ("QY422", False, "VIT"),
+    ("QY448", False, "VIT"),
+    ("3V4537", False, "VIT"),
+    ("BCS1LG", True, "VIT"),
+    ("BCS36V", True, "VIT"),
+    ("BCS22W", True, "VIT"),
+    ("FR4614", False, "VIT"),
+    ("FR4241", False, "VIT"),
+    ("FR2035", False, "VIT"),
+    ("FR3000", False, "VIT"),
+    ("FR3300", False, "VIT"),
+}
+
+lista_vuelos_bio = {
+    ("UX7161", False, "BIO"),
+    ("VY3945", False, "BIO"),
+    ("W46185", False, "BIO"),
+    ("VY2511", False, "BIO"),
+    ("VY1420", False, "BIO"),
+    ("IB429", False, "BIO"),
+    ("IB2355", False, "BIO"),
+    ("VY1422", False, "BIO"),
+    ("E96212", False, "BIO"),
+    ("AF1476", False, "BIO"),
+    ("VY3803", False, "BIO"),
+    ("VY3971", False, "BIO"),
+    ("VY2610", False, "BIO"),
+    ("DY1744", False, "BIO"),
+    ("LH1824", False, "BIO"),
+    ("KL1523", False, "BIO"),
+    ("VY3261", False, "BIO"),
+    ("VY1471", False, "BIO"),
+    ("TP1062", False, "BIO"),
+    ("VY6632", False, "BIO"),
+    ("EW9518", False, "BIO"),
+}
+
+lista_vuelos_pna_eas = {
+    ("NT5404", False, "EAS"),
+    ("NT5402", False, "EAS"),
+    ("V73321", False, "EAS"),
+    ("V73359", False, "EAS"),
+    ("IB443", False, "EAS"),
+    ("IB445", False, "EAS"),
+    ("IB449", False, "EAS"),
+    ("VY2484", False, "EAS"),
+    ("VY2486", False, "EAS"),
+    ("V73347", False, "EAS"),
+    ("V73345", False, "EAS"),
+    ("VY2484", False, "EAS"),
+    ("BA7335", False, "EAS"),
+    ("BA2919", False, "EAS"),
+    ("IB1049", False, "PNA"),
+    ("IB1051", False, "PNA"),
+    ("IB1053", False, "PNA"),
+    ("IB1055", False, "PNA"),
+    ("NT5426", False, "PNA"),
+    ("NT5422", False, "PNA"),
+}
+
+for vuelo in lista_vuelos_vit:
+    descargar_por_num_vuelo(vuelo[0], "2025-06-01", vuelo[1], vuelo[2])
